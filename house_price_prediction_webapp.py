@@ -10,7 +10,7 @@ with open('house_price_prediction_model.sav', 'rb') as f:
 def house_price_prediction(input_data):
     input_array = np.array(input_data).reshape(1, -1)
     prediction = loaded_model.predict(input_array)
-    return f"Predicted House Price: ${prediction[0]:,.2f}"
+    return f"Predicted House Price: ₹{prediction[0]:,.2f}"
 
 def main():
     st.title('House Price Prediction')
