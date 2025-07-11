@@ -15,43 +15,43 @@ def house_price_prediction(input_data):
 def main():
     st.title('House Price Prediction')
 
-    col1, col2, col3 = st.columns(3)
+    col1, col2 = st.columns(2)
 
     with col1:
         number_of_bedrooms = st.text_input('Number of Bedrooms')
     with col2:
         number_of_bathrooms = st.text_input('Number of Bathrooms')
-    with col3:
-        living_area = st.text_input('Living Area')
     with col1:
-        lot_area = st.text_input('Lot Area')
+        living_area = st.text_input('Living Area')
     with col2:
+        lot_area = st.text_input('Lot Area')
+    with col1:
         number_of_floors = st.text_input('Number of Floors')
-    with col3:
+    with col2:
         waterfront_present = st.text_input('Waterfront Present')
     with col1:
         number_of_views = st.text_input('Number of Views')
     with col2:
         condition_of_the_house = st.text_input('Condition of the House')
-    with col3:
-        grade_of_the_house = st.text_input('Grade of the House')
     with col1:
-        area_of_house_excl_basement = st.text_input('Area of the House (excluding basement)')
+        grade_of_the_house = st.text_input('Grade of the House')
     with col2:
+        area_of_house_excl_basement = st.text_input('Area of the House (excluding basement)')
+    with col1:
         area_of_basement = st.text_input('Area of the Basement')
-    with col3:
+    with col2:
         built_year = st.text_input('Built Year')
     with col1:
         renovation_year = st.text_input('Renovation Year')
     with col2:
         postal_code = st.text_input('Postal Code')
-    with col3:
-        latitude = st.text_input('Latitude')
     with col1:
-        longitude = st.text_input('Longitude')
+        latitude = st.text_input('Latitude')
     with col2:
+        longitude = st.text_input('Longitude')
+    with col1:
         living_area_renov = st.text_input('Living Area after Renovation')
-    with col3:
+    with col2:
         lot_area_renov = st.text_input('Lot Area after Renovation')
     with col1:
         number_of_schools_nearby = st.text_input('Number of Schools Nearby')
